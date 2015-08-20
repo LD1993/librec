@@ -6,3 +6,9 @@
 /results.txt
 /release
 /doc/
+
+
+# idea intellij output files
+/out
+/target
+/.idea
