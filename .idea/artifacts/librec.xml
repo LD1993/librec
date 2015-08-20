@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="librec">
+    <output-path>$PROJECT_DIR$/out/artifacts/librec</output-path>
+    <root id="archive" name="librec.jar">
+      <element id="module-output" name="librec" />
+    </root>
+  </artifact>
+</component>
