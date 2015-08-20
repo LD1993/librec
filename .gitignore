@@ -1,5 +1,5 @@
+# elipse output files
 /bin
-/target
 /Results
 /debug.log
 /log4j.log
