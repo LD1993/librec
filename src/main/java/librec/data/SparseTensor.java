@@ -42,7 +42,7 @@ import com.google.common.collect.Table;
  * 
  * <p>
  * <Strong>Reference:</strong> Kolda and Bader, <strong>Tensor Decompositions and Applications</strong>, SIAM REVIEW,
- * Vol. 51, No. 3, pp. 455–500
+ * Vol. 51, No. 3, pp. 455-500
  * </p>
  * 
  * @author Guo Guibing

@@ -18,7 +18,7 @@
 
 package librec.util;
 
-import java.io.FileInputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -35,7 +35,15 @@ public class FileConfiger extends StringMap {
 
 	public FileConfiger(String conf) throws Exception {
 		p = new Properties();
-		p.load(new FileInputStream(FileIO.getResource(conf)));
+
+        if (!conf.equalsIgnoreCase("librec.conf")) {
+            p.load(new FileInputStream(FileIO.getResource(conf)));
+        }else {
+            // try to read the configuration file inside the jar
+            // especially when the argv params are null.
+            InputStream configStream = this.getClass().getClassLoader().getResourceAsStream(conf);
+            p.load(configStream);
+        }
 	}
 
 	public LineConfiger getParamOptions(String key) {

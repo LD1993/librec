@@ -82,7 +82,7 @@ public class Sims {
 	/**
 	 * Calculate Mean Squared Difference (MSD) similarity proposed by Shardanand and Maes [1995]:
 	 * 
-	 * <i>Social information filtering: Algorithms for automating “word of mouth�?/i>
+	 * <i>Social Information Filtering: Algorithms for Automating "Word of Mouth"</i>
 	 * 
 	 * @param u
 	 *            user u's ratings
