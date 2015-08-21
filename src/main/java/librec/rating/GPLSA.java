@@ -44,7 +44,7 @@ import com.google.common.collect.Table;
  * 2003. <br>
  * 
  * <strong>Tempered EM:</strong> Thomas Hofmann, <strong>Unsupervised Learning by Probabilistic Latent Semantic
- * Analysis</strong>, Machine Learning, 42, 177¨C196, 2001.
+ * Analysis</strong>, Machine Learning, 42, 177 C196, 2001.
  * 
  * @author Guo Guibing
  *
