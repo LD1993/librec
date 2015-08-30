@@ -208,13 +208,16 @@ public class SparseMatrix implements Iterable<MatrixEntry>, Serializable {
 			Multimap<Integer, Integer> columnStructure) {
 		int nnz = dataTable.size();
 
-		// CRS
+		// CRS-based sparse matrix, same as the CCS
+		// Row-oriented   : rowPtr [1, 3, 1, 4]
+		// Row-oriented   : RowInd [3, 1,4,5, 2, 6,7,8,9]
 		rowPtr = new int[numRows + 1];
 		colInd = new int[nnz];
 		rowData = new double[nnz];
 
 		int j = 0;
 		for (int i = 1; i <= numRows; ++i) {
+			//get the columns' values
 			Set<Integer> cols = dataTable.row(i - 1).keySet();
 			rowPtr[i] = rowPtr[i - 1] + cols.size();
 
